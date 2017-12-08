@@ -4,6 +4,8 @@ import RouteTabs from './component/RouteTabs/index'
 import {loadTabInfo} from '../dataService/dataService'
 import {BrowserRouter} from 'react-router-dom'
 
+import '../index.scss';
+
 const OrderById = pages => pages.sort((l, r) => l.order > r.order)
 
 class App extends React.Component {
@@ -27,6 +29,7 @@ class App extends React.Component {
                     <RouteTabs pages={this.state.pages}/>
                 </div>
             </BrowserRouter>
+
         )
     }
 }

@@ -1,0 +1,85 @@
+body {
+  font-family: 'Roboto';
+  background-color: #f9f9f9;
+}
+
+.container {
+  height: 500px;
+  width: 580px;
+  padding: 0;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  position: relative;
+}
+
+.hide {
+  display: none;
+}
+
+.tab-content {
+  padding: 25px;
+}
+
+#material-tabs {
+  position: relative;
+  display: block;
+  padding: 0;
+  border-bottom: 1px solid #e0e0e0;
+  > a {
+    width: 25%;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding: 22px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #424f5a;
+    text-align: center;
+    &.active {
+      font-weight: 700;
+      outline: none;
+    }
+    &:not(.active):hover {
+      background-color: inherit;
+      color: #7c848a;
+    }
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .nav-tabs#material-tabs > li > a {
+    font-size: 11px;
+  }
+}
+
+.yellow-bar {
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  height: 3px;
+  background: #458CFF;
+  display: block;
+  left: 0;
+  transition: left .2s ease;
+  -webkit-transition: left .2s ease;
+}
+
+#dummyList.active ~ span.yellow-bar {
+  left: 0;
+  width: 35%;
+}
+
+#dummyTable.active ~ span.yellow-bar {
+  left: 30%;
+  width: 35%;
+}
+
+#dummyChart.active ~ span.yellow-bar {
+  left: 65%;
+  width: 35%;
+}

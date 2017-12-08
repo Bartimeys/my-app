@@ -1,7 +1,12 @@
 import React from 'react'
+// import 'my-app/src/index.scss';
 
 const DummyList = () => (
-    <h3>Dummy List</h3>
+    <div className="tab-content">
+        <div id="tab2">
+        Dummy List
+    </div>
+    </div>
 );
 
 export default DummyList

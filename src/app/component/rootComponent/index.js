@@ -1,10 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './index.css';
 
 export default class RootComponent extends React.Component {
 
     constructor(props) {
+        console.log(props);
         super(props);
         this.state = {
             Component: null,
