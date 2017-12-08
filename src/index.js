@@ -1,11 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import Tabs from './component/tabs';
-import App from './App';
-import tabs from './component/tabs-info';
-import Pane from './component/Pane';
+
+import App from './app/App';
 import registerServiceWorker from './registerServiceWorker';
 
+import './index.css';
 
-ReactDOM.render(<App tabs={tabs} firstSelect={1} />, document.getElementById('root'));
+
+ReactDOM.render(<App />,document.getElementById('root'));

@@ -1,0 +1,16 @@
+{
+  //Hook to allow code-split imports
+  "plugins": ["syntax-dynamic-import"],
+  "presets": [
+    [
+      "es2015", { "modules": false }
+    ],
+    "react"
+  ],
+  "env": {
+    "development": {
+      "plugins": [ "react-hot-loader/babel", "syntax-dynamic-import"],
+      "presets": ["react-hmre"]
+    }
+  }
+}
