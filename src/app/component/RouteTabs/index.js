@@ -3,11 +3,10 @@ import React from "react";
 import {Route, Switch, Redirect } from "react-router";
 import RootComponent from '../rootComponent'
 
-// import 'my-app/src/index.css';
 
-const defTab = arr => arr.filter(p => p.order === 0).map(o => '/'.concat(o.id)).pop()
+const defTab = arr => arr.filter(p => p.order === 0).map(o => '/'.concat(o.id)).pop();
 
-const setProm = path => import(`../../view/${path}`)
+const setProm = path => import(`../../view/${path}`);
 
 //err
 const PageNotFound = ({location}) => {

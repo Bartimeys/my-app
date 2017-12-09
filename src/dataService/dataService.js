@@ -1,4 +1,3 @@
-// import tabs from 'tabs.json'
 const pagesUrl = 'tabs.json';
 
 export const loadTabInfo = () => {

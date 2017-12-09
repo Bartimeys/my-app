@@ -4,7 +4,7 @@ import RouteTabs from './component/RouteTabs/index'
 import {loadTabInfo} from '../dataService/dataService'
 import {BrowserRouter} from 'react-router-dom'
 
-import '../index.scss';
+import '../index.css';
 
 const OrderById = pages => pages.sort((l, r) => l.order > r.order)
 

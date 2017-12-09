@@ -1,5 +1,6 @@
 import React from 'react'
-import './index.scss';
+
+import './index.css';
 
 const DummyList = () => (
     <div className="tab-content">
